@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../lib/actionbarsherlock/actionbarsherlock.iml" filepath="$PROJECT_DIR$/../lib/actionbarsherlock/actionbarsherlock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../lib/library/library.iml" filepath="$PROJECT_DIR$/../lib/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yourremind.iml" filepath="$PROJECT_DIR$/yourremind.iml" />
+    </modules>
+  </component>
+</project>
+
