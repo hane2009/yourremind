@@ -1,7 +1,5 @@
 package com.tencent.yourremind;
 
-
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -10,6 +8,7 @@ import android.support.v4.view.ViewPager;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
+import com.actionbarsherlock.view.SubMenu;
 import com.tencent.yourremind.ui.TabSecondFragment;
 import com.tencent.yourremind.ui.TabThreeFragment;
 import com.tencent.yourremind.ui.TabfirstFragment;
@@ -44,7 +43,7 @@ public class MainActivity extends SherlockFragmentActivity {
 
         pageIndicator = (TabPageIndicator)findViewById(R.id.pageIndicator);
 
-        viewPager = (ViewPager)findViewById(R.id.view_pager);
+        viewPager = (ViewPager)findViewById(R.id.viewPager);
         tabfirstFragment = new TabfirstFragment();
         tabSecondFragment = new TabSecondFragment();
         tabThreeFragment = new TabThreeFragment();
@@ -81,7 +80,12 @@ public class MainActivity extends SherlockFragmentActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        return super.onCreateOptionsMenu(menu);
+        SubMenu sub = menu.addSubMenu("Theme");
+        sub.add(0, R.style.Theme_Sherlock, 0, R.string.add_contact_people);
+        sub.add(0, R.style.Theme_Sherlock_Light, 0, R.string.add_common_software);
+        sub.add(0, R.style.Theme_Sherlock_Light_DarkActionBar, 0, R.string.setting);
+        sub.getItem().setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+        return true;
     }
 
     @Override
