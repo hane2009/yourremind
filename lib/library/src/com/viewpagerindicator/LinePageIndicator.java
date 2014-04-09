@@ -31,6 +31,7 @@ import android.util.FloatMath;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
+import com.example.library.R;
 
 /**
  * Draws a line for each page. The current page line is colored differently

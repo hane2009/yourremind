@@ -2,26 +2,38 @@ package com.tencent.yourremind;
 
 
 
-import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.v4.view.PagerAdapter;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.view.View;
-import android.view.ViewGroup;
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockActivity;
+import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
-import com.actionbarsherlock.view.SubMenu;
-
+import com.tencent.yourremind.ui.TabSecondFragment;
+import com.tencent.yourremind.ui.TabThreeFragment;
+import com.tencent.yourremind.ui.TabfirstFragment;
+import com.viewpagerindicator.TabPageIndicator;
 import java.util.ArrayList;
-import java.util.List;
 
-public class MainActivity extends SherlockActivity implements ActionBar.TabListener,ViewPager.OnPageChangeListener {
-    private ViewPager mViewPager;
-    private ActionBar actionBar;
-    private List<View> viewList;
-    private MainPageAdapter viewPagerAdapter;
+
+public class MainActivity extends SherlockFragmentActivity {
+
+    private static final String[] CONTENT = new String[]{"tab1", "tab2", "tab3"};
+
+    private ViewPager viewPager;
+
+    private TabPageIndicator pageIndicator;
+
+    //three views
+    private ArrayList<Fragment> views = new ArrayList<Fragment>();
+
+    //Fragment
+    TabfirstFragment tabfirstFragment;
+    TabSecondFragment tabSecondFragment;
+    TabThreeFragment tabThreeFragment;
+
+
     /**
      * Called when the activity is first created.
      */
@@ -29,44 +41,47 @@ public class MainActivity extends SherlockActivity implements ActionBar.TabListe
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tab_navigation);
-        mViewPager = (ViewPager)findViewById(R.id.view_pager);
 
-        actionBar = getSupportActionBar();
+        pageIndicator = (TabPageIndicator)findViewById(R.id.pageIndicator);
 
-        getSupportActionBar().setNavigationMode(com.actionbarsherlock.app.ActionBar.NAVIGATION_MODE_TABS);
-        getSupportActionBar().setTitle(R.string.app_name);
+        viewPager = (ViewPager)findViewById(R.id.view_pager);
+        tabfirstFragment = new TabfirstFragment();
+        tabSecondFragment = new TabSecondFragment();
+        tabThreeFragment = new TabThreeFragment();
 
-        ActionBar.Tab tab1 = actionBar.newTab().setText(R.string.tab1).setTabListener(this);
-        actionBar.addTab(tab1);
+        views.add(tabfirstFragment);
+        views.add(tabSecondFragment);
+        views.add(tabThreeFragment);
 
-        ActionBar.Tab tab2 = actionBar.newTab().setText(R.string.tab2).setTabListener(this);
-        actionBar.addTab(tab2);
+        FragmentPagerAdapter adapter = new FragmentAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(adapter);
 
-        ActionBar.Tab tab3 = actionBar.newTab().setText(R.string.tab3).setTabListener(this);
-        actionBar.addTab(tab1);
+        pageIndicator.setViewPager(viewPager);
+        pageIndicator.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int i, float v, int i2) {
 
-        viewList = new ArrayList<View>();
-        View view1 = View.inflate(this,R.layout.tab1,null);
-        View view2 = View.inflate(this,R.layout.tab2,null);
-        View view3 = View.inflate(this,R.layout.tab3,null);
-        viewList.add(view1);
-        viewList.add(view2);
-        viewList.add(view3);
+            }
 
-        viewPagerAdapter = new MainPageAdapter();
-        mViewPager.setAdapter(viewPagerAdapter);
-        mViewPager.setCurrentItem(0);
-        mViewPager.setOnPageChangeListener(this);
+            @Override
+            public void onPageSelected(int i) {
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int i) {
+
+            }
+        });
+
+
+
+
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        SubMenu sub = menu.addSubMenu("Theme");
-        sub.add(0, R.style.Theme_Sherlock, 0, R.string.add_contact_people);
-        sub.add(0, R.style.Theme_Sherlock_Light, 0, R.string.add_common_software);
-        sub.add(0, R.style.Theme_Sherlock_Light_DarkActionBar, 0, R.string.setting);
-        sub.getItem().setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
-        return true;
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -74,58 +89,27 @@ public class MainActivity extends SherlockActivity implements ActionBar.TabListe
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    public void onTabReselected(ActionBar.Tab tab, FragmentTransaction transaction) {
-    }
 
-    @Override
-    public void onTabSelected(ActionBar.Tab tab, FragmentTransaction transaction) {
+    class FragmentAdapter extends FragmentPagerAdapter{
 
-    }
-
-    @Override
-    public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction transaction) {
-    }
-
-    @Override
-    public void onPageScrolled(int i, float v, int i2) {
-
-    }
-
-    @Override
-    public void onPageSelected(int i) {
-
-    }
-
-    @Override
-    public void onPageScrollStateChanged(int i) {
-
-    }
-
-
-    public class MainPageAdapter extends PagerAdapter {
-        @Override
-        public Object instantiateItem(ViewGroup container, int position) {
-            View view = viewList.get(position);
-            mViewPager.addView(view);
-            return view;
+        public FragmentAdapter(FragmentManager fm){
+            super(fm);
         }
 
         @Override
-        public void destroyItem(ViewGroup container, int position, Object object) {
-            container.removeView(viewList.get(position));
+        public CharSequence getPageTitle(int position) {
+            return CONTENT[position % CONTENT.length];
+        }
+
+        @Override
+        public Fragment getItem(int i) {
+            return views.get(i);
         }
 
         @Override
         public int getCount() {
-            return viewList.size();
+            return CONTENT.length;
         }
-
-        @Override
-        public boolean isViewFromObject(View arg0, Object arg1) {
-            return arg0 == arg1;
-        }
-
     }
 }
 
