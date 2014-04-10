@@ -9,9 +9,10 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.view.SubMenu;
+import com.tencent.yourremind.ui.TabFirstFragment;
 import com.tencent.yourremind.ui.TabSecondFragment;
 import com.tencent.yourremind.ui.TabThreeFragment;
-import com.tencent.yourremind.ui.TabfirstFragment;
+
 import com.viewpagerindicator.TabPageIndicator;
 import java.util.ArrayList;
 
@@ -28,7 +29,7 @@ public class MainActivity extends SherlockFragmentActivity {
     private ArrayList<Fragment> views = new ArrayList<Fragment>();
 
     //Fragment
-    TabfirstFragment tabfirstFragment;
+    TabFirstFragment tabFirstFragment;
     TabSecondFragment tabSecondFragment;
     TabThreeFragment tabThreeFragment;
 
@@ -41,14 +42,16 @@ public class MainActivity extends SherlockFragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tab_navigation);
 
+        getSupportActionBar().setIcon(R.drawable.ab_icon);
+
         pageIndicator = (TabPageIndicator)findViewById(R.id.pageIndicator);
 
         viewPager = (ViewPager)findViewById(R.id.viewPager);
-        tabfirstFragment = new TabfirstFragment();
+        tabFirstFragment = new TabFirstFragment();
         tabSecondFragment = new TabSecondFragment();
         tabThreeFragment = new TabThreeFragment();
 
-        views.add(tabfirstFragment);
+        views.add(tabFirstFragment);
         views.add(tabSecondFragment);
         views.add(tabThreeFragment);
 
@@ -80,12 +83,8 @@ public class MainActivity extends SherlockFragmentActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        SubMenu sub = menu.addSubMenu("Theme");
-        sub.add(0, R.style.Theme_Sherlock, 0, R.string.add_contact_people);
-        sub.add(0, R.style.Theme_Sherlock_Light, 0, R.string.add_common_software);
-        sub.add(0, R.style.Theme_Sherlock_Light_DarkActionBar, 0, R.string.setting);
-        sub.getItem().setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
-        return true;
+        getSupportMenuInflater().inflate(R.menu.main_menu,menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override

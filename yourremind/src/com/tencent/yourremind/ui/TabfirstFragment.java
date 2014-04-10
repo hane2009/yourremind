@@ -10,7 +10,7 @@ import com.tencent.yourremind.R;
 /**
  * Created by sidyang on 14-4-9.
  */
-public class TabfirstFragment extends SherlockFragment{
+public class TabFirstFragment extends SherlockFragment{
 
     private View contentView;
 
