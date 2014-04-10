@@ -70,6 +70,23 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/tencent/yourremind/LoginActivity.java" line="26" class="com.tencent.yourremind.LoginActivity$1" package="com.tencent.yourremind">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -79,46 +96,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tencent/yourremind/MainActivity.java">
+      <file leaf-file-name="LoginActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/tencent/yourremind/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="0" selection-start="2359" selection-end="2359" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2484">
+            <state line="26" column="24" selection-start="749" selection-end="757" vertical-scroll-proportion="0.49298596" vertical-offset="168" max-vertical-offset="667">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="23" selection-start="1645" selection-end="1645" vertical-scroll-proportion="0.90612245" vertical-offset="361" max-vertical-offset="1012">
-              <folding />
+            <state line="40" column="0" selection-start="1693" selection-end="1693" vertical-scroll-proportion="0.0" vertical-offset="387" max-vertical-offset="1242">
+              <folding>
+                <element signature="e#531#549#0" expanded="true" />
+                <element signature="e#685#703#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuInflater.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../lib/actionbarsherlock/src/com/actionbarsherlock/view/MenuInflater.java">
+      <file leaf-file-name="YourremindActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tencent/yourremind/YourremindActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="16" selection-start="3628" selection-end="3628" vertical-scroll-proportion="0.0" vertical-offset="1422" max-vertical-offset="10810">
-              <folding />
+            <state line="18" column="13" selection-start="0" selection-end="3138" vertical-scroll-proportion="0.0" vertical-offset="226" max-vertical-offset="2829">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#917#927#0" expanded="true" />
+                <element signature="e#3082#3083#0" expanded="true" />
+                <element signature="e#3127#3128#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="themes.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/themes.xml">
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="94" selection-start="146" selection-end="146" vertical-scroll-proportion="-2.76" vertical-offset="0" max-vertical-offset="1518">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="abs__themes.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../lib/actionbarsherlock/res/values/abs__themes.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="160" column="51" selection-start="10969" selection-end="11003" vertical-scroll-proportion="-7.72" vertical-offset="3487" max-vertical-offset="4899">
+            <state line="5" column="19" selection-start="385" selection-end="385" vertical-scroll-proportion="-4.6" vertical-offset="0" max-vertical-offset="506">
               <folding />
             </state>
           </provider>
@@ -136,7 +152,6 @@
       <list>
         <option value="$PROJECT_DIR$/res/layout/tab1.xml" />
         <option value="$PROJECT_DIR$/res/layout/tab2.xml" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/layout/tab_navigation.xml" />
         <option value="$PROJECT_DIR$/src/com/tencent/yourremind/ui/TabSecondFragment.java" />
         <option value="$PROJECT_DIR$/src/com/tencent/yourremind/ui/TabThreeFragment.java" />
@@ -152,6 +167,11 @@
         <option value="$PROJECT_DIR$/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/src/com/tencent/yourremind/MainActivity.java" />
         <option value="$PROJECT_DIR$/res/values/themes.xml" />
+        <option value="$PROJECT_DIR$/res/layout/login_layout.xml" />
+        <option value="$PROJECT_DIR$/src/com/tencent/yourremind/util/Constant.java" />
+        <option value="$PROJECT_DIR$/src/com/tencent/yourremind/ui/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/com/tencent/yourremind/YourremindActivity.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
@@ -207,6 +227,114 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yourremind" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yourremind" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yourremind" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yourremind" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yourremind" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yourremind" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yourremind" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yourremind" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yourremind" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -220,8 +348,8 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="F:/gitworkspace/ActionBarSherlock/actionbarsherlock-samples" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/open_sdk.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.10729611" />
     <property name="OverrideImplement.combined" value="true" />
@@ -240,6 +368,9 @@
       <recent name="F:\workspace\yourremind\yourremind\yourremind\res\values" />
       <recent name="F:\workspace\yourremind\yourremind\yourremind\res\anim" />
       <recent name="F:\workspace\yourremind\yourremind\yourremind\res\menu" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.tencent.yourremind" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.yourremind">
@@ -277,19 +408,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -315,6 +433,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -372,8 +503,8 @@
     </configuration>
     <configuration default="false" name="yourremind" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="yourremind" />
-      <option name="ACTIVITY_CLASS" value="com.tencent.yourremind.MainActivity" />
-      <option name="MODE" value="specific_activity" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
@@ -391,110 +522,8 @@
       <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="fragments" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="fragments" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="false" name="demos" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="demos" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="false" name="styled" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="styled" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="false" name="known-bugs" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="known-bugs" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="false" name="roboguice" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="roboguice" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <RunnerSettings RunnerId="AndroidDebugRunner" />
-      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
-      <method />
-    </configuration>
-    <list size="6">
+    <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Android Application.yourremind" />
-      <item index="1" class="java.lang.String" itemvalue="Android Application.fragments" />
-      <item index="2" class="java.lang.String" itemvalue="Android Application.demos" />
-      <item index="3" class="java.lang.String" itemvalue="Android Application.styled" />
-      <item index="4" class="java.lang.String" itemvalue="Android Application.known-bugs" />
-      <item index="5" class="java.lang.String" itemvalue="Android Application.roboguice" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -510,24 +539,45 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32772166" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39955106" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46689114" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40965208" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28395063" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -536,9 +586,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32659933" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -546,24 +595,24 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24919441" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32659933" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32659933" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32772166" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955106" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46689114" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40965208" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28395063" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -591,25 +640,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/tencent/yourremind/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="82" selection-start="1556" selection-end="1556" vertical-scroll-proportion="0.0" vertical-offset="722" max-vertical-offset="1700">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lib/actionbarsherlock/src/com/actionbarsherlock/app/ActionBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="28" selection-start="3908" selection-end="3908" vertical-scroll-proportion="0.0" vertical-offset="1950" max-vertical-offset="24050" />
-      </provider>
-    </entry>
-    <entry file="file://C:/sdk/sources/android-17/android/app/ActionBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="867" column="21" selection-start="32024" selection-end="32024" vertical-scroll-proportion="0.20242214" vertical-offset="20958" max-vertical-offset="23725" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../lib/actionbarsherlock/src/com/actionbarsherlock/app/ActionBar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="28" selection-start="3908" selection-end="3908" vertical-scroll-proportion="0.0" vertical-offset="1158" max-vertical-offset="23450" />
@@ -640,9 +670,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../lib/library/src/com/viewpagerindicator/TabPageIndicator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="51" selection-start="3044" selection-end="3044" vertical-scroll-proportion="0.3143872" vertical-offset="1134" max-vertical-offset="5842">
-          <folding />
-        </state>
+        <state line="87" column="51" selection-start="3044" selection-end="3044" vertical-scroll-proportion="0.3143872" vertical-offset="1134" max-vertical-offset="5842" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../lib/library/src/com/viewpagerindicator/TitlePageIndicator.java">
@@ -681,23 +709,17 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/../lib/actionbarsherlock/libs/android-support-v4.jar!/android/support/v4/app/FragmentActivity.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="165" selection-end="165" vertical-scroll-proportion="0.21698113" vertical-offset="0" max-vertical-offset="2622">
-          <folding />
-        </state>
+        <state line="6" column="13" selection-start="165" selection-end="165" vertical-scroll-proportion="0.21698113" vertical-offset="0" max-vertical-offset="2622" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../lib/actionbarsherlock/src/android/support/v4/app/Watson.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="47" selection-start="637" selection-end="637" vertical-scroll-proportion="0.2072072" vertical-offset="0" max-vertical-offset="3197">
-          <folding />
-        </state>
+        <state line="15" column="47" selection-start="637" selection-end="637" vertical-scroll-proportion="0.2072072" vertical-offset="0" max-vertical-offset="3197" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../lib/actionbarsherlock/src/com/actionbarsherlock/app/SherlockFragmentActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="48" selection-start="788" selection-end="788" vertical-scroll-proportion="0.2072072" vertical-offset="0" max-vertical-offset="6877">
-          <folding />
-        </state>
+        <state line="20" column="48" selection-start="788" selection-end="788" vertical-scroll-proportion="0.2072072" vertical-offset="0" max-vertical-offset="6877" />
       </provider>
     </entry>
     <entry file="file://F:/gitworkspace/ActionBarSherlock/actionbarsherlock-samples/demos/res/drawable-hdpi/ic_compose_inverse.png">
@@ -712,16 +734,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../lib/actionbarsherlock/src/com/actionbarsherlock/ActionBarSherlock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="793" column="31" selection-start="29676" selection-end="29676" vertical-scroll-proportion="0.8087886" vertical-offset="16937" max-vertical-offset="17917">
-          <folding />
-        </state>
+        <state line="793" column="31" selection-start="29676" selection-end="29676" vertical-scroll-proportion="0.8087886" vertical-offset="16937" max-vertical-offset="17917" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../lib/actionbarsherlock/src/com/actionbarsherlock/view/ActionMode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="21" selection-start="6066" selection-end="6066" vertical-scroll-proportion="0.33333334" vertical-offset="3556" max-vertical-offset="4853">
-          <folding />
-        </state>
+        <state line="185" column="21" selection-start="6066" selection-end="6066" vertical-scroll-proportion="0.33333334" vertical-offset="3556" max-vertical-offset="4853" />
       </provider>
     </entry>
     <entry file="file://F:/gitworkspace/ActionBarSherlock/actionbarsherlock-samples/demos/res/drawable-hdpi/ic_search_inverse.png">
@@ -736,52 +754,27 @@
     </entry>
     <entry file="file://F:/gitworkspace/ActionBarSherlock/actionbarsherlock-samples/demos/src/com/actionbarsherlock/sample/demos/ActionModes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="64" selection-start="2831" selection-end="2853" vertical-scroll-proportion="1.0" vertical-offset="295" max-vertical-offset="1978">
-          <folding>
-            <element signature="e#1314#1508#0" expanded="false" />
-            <element signature="e#1497#1498#0" expanded="false" />
-            <element signature="e#1574#1781#0" expanded="false" />
-            <element signature="e#1770#1771#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="72" column="64" selection-start="2831" selection-end="2853" vertical-scroll-proportion="1.0" vertical-offset="295" max-vertical-offset="1978" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../lib/actionbarsherlock/src/com/actionbarsherlock/app/SherlockActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="38" selection-start="1720" selection-end="1720" vertical-scroll-proportion="0.35985747" vertical-offset="249" max-vertical-offset="6118">
-          <folding />
-        </state>
+        <state line="40" column="38" selection-start="1720" selection-end="1720" vertical-scroll-proportion="0.35985747" vertical-offset="249" max-vertical-offset="6118" />
       </provider>
     </entry>
     <entry file="file://F:/gitworkspace/ActionBarSherlock/actionbarsherlock-samples/demos/res/menu/settings_action_provider.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855" />
       </provider>
     </entry>
     <entry file="file://F:/gitworkspace/ActionBarSherlock/actionbarsherlock-samples/demos/src/com/actionbarsherlock/sample/demos/ActionProviders.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="53" selection-start="1980" selection-end="1980" vertical-scroll-proportion="0.0" vertical-offset="1104" max-vertical-offset="2162">
-          <folding />
-        </state>
+        <state line="55" column="53" selection-start="1980" selection-end="1980" vertical-scroll-proportion="0.0" vertical-offset="1104" max-vertical-offset="2162" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../lib/actionbarsherlock/src/com/actionbarsherlock/view/SubMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="24" selection-start="1076" selection-end="1083" vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="2323">
-          <folding>
-            <element signature="e#0#3646#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="36" selection-start="409" selection-end="427" vertical-scroll-proportion="-5.52" vertical-offset="0" max-vertical-offset="506">
-          <folding />
-        </state>
+        <state line="33" column="24" selection-start="1076" selection-end="1083" vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="2323" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../lib/actionbarsherlock/res/drawable-hdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png">
@@ -793,18 +786,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="65" selection-start="263" selection-end="263" vertical-scroll-proportion="-5.52" vertical-offset="0" max-vertical-offset="782">
           <folding>
-            <element signature="e#549#577#0" expanded="true" />
-            <element signature="e#789#818#0" expanded="true" />
-            <element signature="e#1034#1051#0" expanded="true" />
+            <element signature="e#549#577#0" expanded="false" />
+            <element signature="e#789#818#0" expanded="false" />
+            <element signature="e#1034#1051#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/anim/scale_up_to_status_bar.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="667">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="667" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
@@ -822,58 +813,56 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/bugly_tab_selected_holo.9.png">
-      <provider selected="true" editor-type-id="ninepatcheditor">
+      <provider editor-type-id="images">
         <state />
       </provider>
-      <provider editor-type-id="images">
+      <provider selected="true" editor-type-id="ninepatcheditor">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/bugly_tab_unselected_holo.9.png">
-      <provider selected="true" editor-type-id="ninepatcheditor">
+      <provider editor-type-id="images">
         <state />
       </provider>
-      <provider editor-type-id="images">
+      <provider selected="true" editor-type-id="ninepatcheditor">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/bugly_tab_unselected_focused_holo.9.png">
-      <provider selected="true" editor-type-id="ninepatcheditor">
+      <provider editor-type-id="images">
         <state />
       </provider>
-      <provider editor-type-id="images">
+      <provider selected="true" editor-type-id="ninepatcheditor">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/bugly_tab_selected_focused_holo.9.png">
-      <provider selected="true" editor-type-id="ninepatcheditor">
+      <provider editor-type-id="images">
         <state />
       </provider>
-      <provider editor-type-id="images">
+      <provider selected="true" editor-type-id="ninepatcheditor">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/bugly_tab_unselected_pressed_holo.9.png">
-      <provider selected="true" editor-type-id="ninepatcheditor">
+      <provider editor-type-id="images">
         <state />
       </provider>
-      <provider editor-type-id="images">
+      <provider selected="true" editor-type-id="ninepatcheditor">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/bugly_tab_selected_pressed_holo.9.png">
-      <provider selected="true" editor-type-id="ninepatcheditor">
+      <provider editor-type-id="images">
         <state />
       </provider>
-      <provider editor-type-id="images">
+      <provider selected="true" editor-type-id="ninepatcheditor">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable/bugly_tab_indicator_holo.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="37" selection-start="1321" selection-end="1325" vertical-scroll-proportion="0.5214198" vertical-offset="103" max-vertical-offset="920">
-          <folding />
-        </state>
+        <state line="23" column="37" selection-start="1321" selection-end="1325" vertical-scroll-proportion="0.5214198" vertical-offset="103" max-vertical-offset="920" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../lib/actionbarsherlock/res/values-v14/abs__styles.xml">
@@ -897,9 +886,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/anim/slide_right_in.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="490">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="490" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
@@ -911,35 +898,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../lib/actionbarsherlock/src/com/actionbarsherlock/view/MenuInflater.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="16" selection-start="3628" selection-end="3628" vertical-scroll-proportion="0.0" vertical-offset="1422" max-vertical-offset="10810">
-          <folding />
-        </state>
+        <state line="105" column="16" selection-start="3628" selection-end="3628" vertical-scroll-proportion="0.0" vertical-offset="1422" max-vertical-offset="10810" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../lib/actionbarsherlock/res/values/abs__themes.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="51" selection-start="10969" selection-end="11003" vertical-scroll-proportion="-7.72" vertical-offset="3487" max-vertical-offset="4899">
+        <state line="160" column="51" selection-start="10969" selection-end="11003" vertical-scroll-proportion="0.4186551" vertical-offset="3487" max-vertical-offset="4899">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/themes.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="94" selection-start="146" selection-end="146" vertical-scroll-proportion="-2.76" vertical-offset="0" max-vertical-offset="1518">
+        <state line="3" column="94" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="69" max-vertical-offset="1518">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tencent/yourremind/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/login_layout.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="0" selection-start="2359" selection-end="2359" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2484">
+        <state line="12" column="36" selection-start="438" selection-end="445" vertical-scroll-proportion="0.5808656" vertical-offset="21" max-vertical-offset="460">
           <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tencent/yourremind/util/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="59" selection-start="164" selection-end="164" vertical-scroll-proportion="0.32264528" vertical-offset="0" max-vertical-offset="499">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="19" selection-start="385" selection-end="385" vertical-scroll-proportion="-4.6" vertical-offset="0" max-vertical-offset="506">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tencent/yourremind/YourremindActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="13" selection-start="0" selection-end="3138" vertical-scroll-proportion="0.0" vertical-offset="226" max-vertical-offset="2829">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#917#927#0" expanded="true" />
+            <element signature="e#3082#3083#0" expanded="true" />
+            <element signature="e#3127#3128#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="23" selection-start="1645" selection-end="1645" vertical-scroll-proportion="0.90612245" vertical-offset="361" max-vertical-offset="1012">
+        <state line="40" column="0" selection-start="1693" selection-end="1693" vertical-scroll-proportion="0.0" vertical-offset="387" max-vertical-offset="1242">
+          <folding>
+            <element signature="e#531#549#0" expanded="true" />
+            <element signature="e#685#703#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tencent/yourremind/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="24" selection-start="749" selection-end="757" vertical-scroll-proportion="0.49298596" vertical-offset="168" max-vertical-offset="667">
           <folding />
         </state>
       </provider>
@@ -996,12 +1020,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>library</last-edited>
+          <last-edited>yourremind</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.10729611" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1021,7 +1044,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>android-support-v4</last-edited>
+          <last-edited>open_sdk</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
