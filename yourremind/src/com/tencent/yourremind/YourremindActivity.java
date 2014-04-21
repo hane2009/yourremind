@@ -75,9 +75,6 @@ public class YourremindActivity extends SherlockFragmentActivity {
             }
         });
 
-
-
-
     }
 
     @Override
