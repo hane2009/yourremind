@@ -20,6 +20,7 @@
     <orderEntry type="module" module-name="library" />
     <orderEntry type="library" name="mta-sdk-1.0.0" level="project" />
     <orderEntry type="library" name="open_sdk" level="project" />
+    <orderEntry type="library" name="libammsdk" level="project" />
   </component>
 </module>
 

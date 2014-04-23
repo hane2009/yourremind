@@ -13,4 +13,10 @@
     <string name="tab2">tab2</string>
     <string name="tab3">tab3</string>
 
+    <!-- LoginActivity -->
+    <string name="login_activity_title">欢迎登录</string>
+    <string name="login_activity_useQQLogin">使用QQ登录</string>
+    <string name="login_activity_useWeixinLogin">使用微信登录</string>
+    <string name="login_activity_yourreminddesc1">keep you remind</string>
+    <string name="login_activity_yourreminddesc2">keep everyone around you</string>
 </resources>

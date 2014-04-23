@@ -9,6 +9,7 @@ import com.tencent.tauth.IUiListener;
 import com.tencent.tauth.Tencent;
 import com.tencent.tauth.UiError;
 import com.tencent.yourremind.util.Constant;
+import com.tencent.yourremind.util.SettingUtil;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -27,6 +28,16 @@ public class LoginActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_layout);
+        //初始化登录UI
+        initUi();
+
+        //判断是否直接跳转
+        whetherGotoMainActivity();
+    }
+
+
+    public void initUi(){
+        //setting login listener
         qqLogin = (Button)findViewById(R.id.qqlogin);
 
         qqLogin.setOnClickListener(new View.OnClickListener() {
@@ -38,16 +49,24 @@ public class LoginActivity extends Activity {
                 }else {
                     username = mTencent.getOpenId();
                     password = mTencent.getOpenId();
-                    Login();
+                    GoToMainYourrmind();
                 }
 
             }
         });
     }
 
-    public void Login(){
+    public void whetherGotoMainActivity(){
+        if(SettingUtil.getIsUserLogin(getApplicationContext())){
+            GoToMainYourrmind();
+        }
+    }
+
+    public void GoToMainYourrmind(){
+        SettingUtil.setIsUserLogin(getApplicationContext(),true);
         Intent intent = new Intent(this, YourremindActivity.class);
         startActivity(intent);
+        this.finish();
     }
 
     /**
@@ -63,7 +82,9 @@ public class LoginActivity extends Activity {
                 if (openId != null && !openId.equals("")) {
                     username = openId;
                     password = openId;
-                    Login();
+                    SettingUtil.setUsername(getApplicationContext(),username);
+                    SettingUtil.setPassword(getApplicationContext(),password);
+                    GoToMainYourrmind();
                 }
             }catch (JSONException e){
 
