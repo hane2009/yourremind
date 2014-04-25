@@ -43,7 +43,7 @@ public class LoginActivity extends Activity {
         qqLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mTencent = Tencent.createInstance(Constant.APPID_QQ_SDK, getApplicationContext());
+                mTencent = Tencent.createInstance(Constant.APPID_QQ_SDK, getBaseContext());
                 if(!mTencent.isSessionValid()){
                     mTencent.login(LoginActivity.this,SCOPE,new BaseUiListener());
                 }else {
@@ -57,13 +57,13 @@ public class LoginActivity extends Activity {
     }
 
     public void whetherGotoMainActivity(){
-        if(SettingUtil.getIsUserLogin(getApplicationContext())){
+        if(SettingUtil.getIsUserLogin(getBaseContext())){
             GoToMainYourrmind();
         }
     }
 
     public void GoToMainYourrmind(){
-        SettingUtil.setIsUserLogin(getApplicationContext(),true);
+        SettingUtil.setIsUserLogin(getBaseContext(),true);
         Intent intent = new Intent(this, YourremindActivity.class);
         startActivity(intent);
         this.finish();
@@ -82,8 +82,9 @@ public class LoginActivity extends Activity {
                 if (openId != null && !openId.equals("")) {
                     username = openId;
                     password = openId;
-                    SettingUtil.setUsername(getApplicationContext(),username);
-                    SettingUtil.setPassword(getApplicationContext(),password);
+                    SettingUtil.setUsername(getBaseContext(),username);
+                    SettingUtil.getUsername(getBaseContext());
+                    SettingUtil.setPassword(getBaseContext(),password);
                     GoToMainYourrmind();
                 }
             }catch (JSONException e){
