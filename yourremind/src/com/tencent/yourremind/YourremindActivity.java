@@ -2,6 +2,7 @@ package com.tencent.yourremind;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -107,6 +108,8 @@ public class YourremindActivity extends SherlockFragmentActivity {
                                     public void onClick(DialogInterface dialog, int which) {
                                         dialog.dismiss();
                                         SettingUtil.setIsUserLogin(getBaseContext(),false);
+                                        Intent intent = new Intent(YourremindActivity.this,LoginActivity.class);
+                                        startActivity(intent);
                                     }
                                 }).create().show();
             }

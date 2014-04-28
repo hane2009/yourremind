@@ -1,7 +1,10 @@
 package com.tencent.yourremind.ui;
 
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -12,7 +15,9 @@ import android.support.v4.widget.SimpleCursorAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 import com.actionbarsherlock.app.SherlockFragment;
 import com.tencent.yourremind.R;
 
@@ -43,19 +48,41 @@ public class TabFirstFragment extends SherlockFragment implements LoaderManager.
         if(contentView == null ){
             contentView = inflater.inflate(R.layout.tab1,container,false);
         }
+
         listView = (ListView)contentView.findViewById(R.id.add_import_people_list);
 
-        // For the cursor adapter, specify which columns go into which views
         String[] fromColumns = {ContactsContract.Data.DISPLAY_NAME};
-        int[] toViews = {android.R.id.text1}; // The TextView in simple_list_item_1
+        int[] toViews = {R.id.people};
 
-        // Create an empty adapter we will use to display the loaded data.
-        // We pass null for the cursor, then update it in onLoadFinished()
         mAdapter = new SimpleCursorAdapter(container.getContext(),
-                android.R.layout.simple_list_item_1, null,
+                R.layout.import_people_list, null,
                 fromColumns, toViews, 0);
 
         listView.setAdapter(mAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                TextView tx = (TextView)view.findViewById(R.id.people);
+                new AlertDialog.Builder(context).setMessage("是否添加重要用户？")
+                        .setPositiveButton("是",
+                                new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        dialog.dismiss();
+                                        Intent intent = new Intent(getActivity(),AddImportPeopleActivity.class);
+                                        startActivity(intent);
+                                    }
+                                })
+                        .setNegativeButton("否",
+                                new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        dialog.dismiss();
+                                    }
+                                }).create().show();
+            }
+        });
 
         getLoaderManager().initLoader(0, null, this);
         return contentView;

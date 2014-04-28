@@ -45,6 +45,7 @@
 
         <activity android:name=".YourremindActivity"
                   android:theme="@style/Theme.Yourremind.ActionBar.PageIndicator"/>
+        <activity android:name=".ui.AddImportPeopleActivity"/>
 
 
         <!-- QQ end -->
