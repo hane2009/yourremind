@@ -64,6 +64,7 @@ public class TabFirstFragment extends SherlockFragment implements LoaderManager.
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 TextView tx = (TextView)view.findViewById(R.id.people);
+                final String name = tx.getText().toString();
                 new AlertDialog.Builder(context).setMessage("是否添加重要用户？")
                         .setPositiveButton("是",
                                 new DialogInterface.OnClickListener() {
@@ -71,6 +72,9 @@ public class TabFirstFragment extends SherlockFragment implements LoaderManager.
                                     public void onClick(DialogInterface dialog, int which) {
                                         dialog.dismiss();
                                         Intent intent = new Intent(getActivity(),AddImportPeopleActivity.class);
+                                        Bundle bundle = new Bundle();
+                                        bundle.putString("name",name);
+                                        intent.putExtras(bundle);
                                         startActivity(intent);
                                     }
                                 })
